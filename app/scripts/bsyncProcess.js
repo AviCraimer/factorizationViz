@@ -3,7 +3,7 @@ const bs = require('browser-sync').create();
 // .init starts the server
 bs.init({
     server: "./",
-    files: ["*.js", '*.css', '*.html', 'images/*.svg']
+    files: ["app/*.js", 'app/*.css', 'app/*.html', 'app/images/*.svg']
 });
 
 // Now call methods on bs instead of the
