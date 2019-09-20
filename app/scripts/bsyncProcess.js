@@ -2,7 +2,7 @@ const bs = require('browser-sync').create();
 
 // .init starts the server
 bs.init({
-    server: "./",
+    server: "",
     files: ["app/*.js", 'app/*.css', 'app/*.html', 'app/images/*.svg']
 });
 
