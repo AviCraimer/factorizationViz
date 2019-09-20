@@ -33,6 +33,8 @@ function circleDivision (divisions, radius = 1, center = [0,0] ) {
 }
 
 
+
+
 //Test
 // for (let i = 1; i < 7; i++) {
 //     console.log(unitCircleDivision(i));

@@ -1,7 +1,9 @@
-const {mathWebPointConversion} = require('../math/util');
+// const {mathWebPointConversion} = require('../math/util');
+const {circleDivision} = require('../math/divideCircle');
 
 function svgCircle (center, radius, classNames = "", style = "") {
-    [x,y] = mathWebPointConversion(center);
+    const [x,y] = center;
+
     return `
     <circle
         ${ (classNames ? `class="${classNames}"` : "" )}
@@ -10,11 +12,21 @@ function svgCircle (center, radius, classNames = "", style = "") {
     />`
 }
 
+function circlesAllAround (divisions, radius, center) {
+    return circleDivision(divisions, radius, center).map(point => {
+        return svgCircle(point, radius);
+    });
+}
+
 //Test
 
 const testCircle = svgCircle([1,1],2, "littleCircle", "fill: red;"  );
-console.log(testCircle);
+// console.log(testCircle);
+console.log(circlesAllAround(4,2,[10,10] ));
+
+
 
 module.exports = {
-    svgCircle
+    svgCircle,
+    circlesAllAround
 }
