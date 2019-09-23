@@ -1,6 +1,7 @@
 // const {mathWebPointConversion} = require('../math/util');
 const {circleDivision} = require('../math/divideCircle');
 
+
 function svgCircle (center, radius, classNames = "", style = "") {
     const [x,y] = center;
 

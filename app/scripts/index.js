@@ -3,10 +3,14 @@ const { exec } = require('child_process');
 
 // exec(`node bsyncProcess`);
 const {circlesAllAround } = require('./svgGeneration/svgCircle');
-const {svgTemplate} = require('./svgGeneration/makeSvgFile');
+const {svgTemplate, writeSvgFile} = require('./svgGeneration/writeSvgFile');
 
 
-const circles = circlesAllAround(7,20,[50,50]);
+const circles = circlesAllAround(7,200,[500,500]);
 
-const svgMarkup = svgTemplate({elements: circles})
-console.log(svgMarkup);
+const options = {elements: circles, title: '7 Circles SVG'};
+
+
+writeSvgFile('C:/myCode/factorizationViz/app/generatedSvgFiles/7Circles.svg', options);
+
+

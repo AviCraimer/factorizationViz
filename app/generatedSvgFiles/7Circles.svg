@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7 Circles SVG</title>
+
+    <circle
+
+
+        cx="700" cy="500" r="200"
+    />
+
+    <circle
+
+
+        cx="624.697960371746" cy="656.366296493606" r="200"
+    />
+
+    <circle
+
+
+        cx="455.495813208738" cy="694.985582436364" r="200"
+    />
+
+    <circle
+
+
+        cx="319.80622641951595" cy="586.776747823512" r="200"
+    />
+
+    <circle
+
+
+        cx="319.80622641951595" cy="413.223252176488" r="200"
+    />
+
+    <circle
+
+
+        cx="455.495813208738" cy="305.014417563636" r="200"
+    />
+
+    <circle
+
+
+        cx="624.697960371746" cy="343.633703506394" r="200"
+    />
+
+</svg>
