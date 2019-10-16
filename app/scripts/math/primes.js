@@ -90,12 +90,10 @@ function getPrimesUpTo (max) {
     return [nums, primes];
 }
 
-// console.log(
-// getPrimesUpTo(20));
 
 let [nums, primes] = getPrimesUpTo(1000);
 
-// nums.forEach (n => console.log(n.number, n.factors) );
+
 
 writeFileSync('./primes.json', JSON.stringify(primes));
 

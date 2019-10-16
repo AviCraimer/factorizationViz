@@ -6,11 +6,13 @@ const {circlesAllAround } = require('./svgGeneration/svgCircle');
 const {svgTemplate, writeSvgFile} = require('./svgGeneration/writeSvgFile');
 
 
-const circles = circlesAllAround(7,200,[500,500]);
+const numCircles = 100;
 
-const options = {elements: circles, title: '7 Circles SVG'};
+const circles = circlesAllAround(numCircles, 200,[500,500]);
+
+const options = {elements: circles, title: numCircles + ' Circles SVG'};
 
 
-writeSvgFile('C:/myCode/factorizationViz/app/generatedSvgFiles/7Circles.svg', options);
+writeSvgFile('C:/myCode/factorizationViz/app/generatedSvgFiles/'+ numCircles + 'Circles.svg', options);
 
 
